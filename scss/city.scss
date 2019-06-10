@@ -1,0 +1,33 @@
+.city {
+  display: flex;
+  justify-content: center;
+
+  height: 106px;
+}
+
+.city__text {
+  width: $header-container-width;
+
+  margin: 56px 0 16px 0;
+
+  font-size: 22px;
+  line-height: 34px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .city__text {
+    width: $header-container-width2;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 639px) {
+  .city {
+   height: 34px;
+  }
+  .city__text {
+    width: $header-container-width3;
+
+    margin: 0 0 14px 0;
+  }
+}

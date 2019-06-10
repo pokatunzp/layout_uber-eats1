@@ -1,0 +1,176 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  height: 72px;
+
+  font-family: 'Roboto', sans-serif;
+
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+} 
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+
+  width: $header-container-width;
+}
+
+.header__logo {
+  display: flex;
+
+  img {
+    margin-right: 123px;
+  }
+}
+
+.header__location {
+  display: flex;
+  align-items: center;
+
+  margin-right: 92px;
+}
+
+.header__location-when {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 65px;
+  height: 40px;
+
+  padding: 7px 11px;
+
+  background: #FFFFFF;
+
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}  
+
+.header__location-to {
+  margin: 28px 9px 25px 9px;
+  
+  font-weight: 300;
+  font-size: 16px;
+  color: #626262;
+}
+
+.header__location-where {
+  width: 292px;
+  height: 40px;
+
+  padding: 7px 0 7px 36px;
+
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-image: url(../img/map_mark.png);
+  background-repeat: no-repeat; 
+  background-position: 12px;   
+}
+
+
+.header__user {
+  display: flex;
+  align-items: center;
+}
+
+.header__user-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 16px;
+
+  height: 40px;
+  width: 80px;
+
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  color: #1D1D1D;
+  line-height: 24px;
+}
+
+
+.header__user-button:hover {
+color: #FFFFFF;
+background: #1D1D1D;
+border: none;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .header__container {
+    width: $header-container-width2;
+  }
+
+  .header__logo img{
+    width: 105px;
+
+    margin-right: 22px;
+  }
+
+  .header__location {
+    margin-right: 88px;
+  }
+
+
+  .header__location-when {
+    width: 57px;
+  
+    font-size: 13px;
+  } 
+  
+  .header__location-to {
+    margin: 28px 10px 25px 10px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .header__location-where {
+    width: 215px;
+    
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 639px) {
+  .header__container {
+    width: $header-container-width3;
+  }
+
+  .header__logo img{
+    width: 105px;
+
+    margin-right: 46px;
+  }
+
+  .header__location {
+    display: none;
+  }
+
+  .header__user-basket img{
+    display: none;
+  }
+
+  .header__user-button {
+    margin-right: 12px;
+  
+    width: 72px;
+    
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+

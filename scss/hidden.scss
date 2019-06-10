@@ -1,0 +1,67 @@
+.hidden__location {
+  display: none;
+}
+
+@media (min-width: 1px) and (max-width: 639px) {
+  .hidden__location {
+    display: grid;
+    grid-template-columns: 65px 227px;
+    grid-template-rows: 37px auto;
+    justify-content: left;
+    row-gap: 8px;
+    column-gap: 16px;
+    
+    height: 125px;
+    width: $header-container-width3;
+  
+    margin: 0 auto;
+  }
+
+  .hidden__location-when {
+    -webkit-appearance: none;
+    appearance: none;
+  
+    width: 65px;
+    height: 40px;
+  
+    padding: 8px 16px;
+    margin: 0;
+  
+    background: #FFFFFF;
+  
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+  
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+  }  
+  
+  .hidden__location-text {
+    font-size: 11px;
+    color: #626262;
+    line-height: 13px;
+
+    align-self: flex-end;
+    margin: 0;
+  }
+  
+  .hidden__location-where {
+    width: 227px;
+    height: 40px;
+  
+    padding: 8px 0 8px 35px;
+    margin: 0;
+
+  
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+  
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    background-image: url(../img/map_mark.png);
+    background-repeat: no-repeat; 
+    background-position: 12px;   
+  }
+}

@@ -1,0 +1,27 @@
+.up {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+
+  width: 80px;
+  height: 80px;
+
+  background-image: url(../img/btn-up2.png);
+}
+
+.up:hover {
+  background-image: url(../img/btn-up.png);
+}
+
+@media (min-width: 1px) and (max-width: 639px) {
+  .up {
+    width: 64px;
+    height: 64px;
+
+    background-image: url(../img/btn.png);
+  }
+
+  .up:hover {
+    background-image: url(../img/btn2.png);
+  }
+}

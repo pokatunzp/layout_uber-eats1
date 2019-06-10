@@ -1,0 +1,21 @@
+$header-container-width: 956px;
+$header-container-width2: 752px;
+$header-container-width3: 308px;
+
+body {
+  margin: 0;
+}
+
+.hidden__location {
+  display: none;
+}
+
+@import "./header.scss";
+@import "./search.scss";
+@import "./hidden.scss";
+@import "./city.scss";
+@import "./cardlist.scss";
+@import "./card.scss";
+@import "./footer.scss";
+@import "./search.scss";
+@import "./return.scss";
